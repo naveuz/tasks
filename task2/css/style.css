@@ -1,40 +1,43 @@
 body {
+    margin: 0;
+    padding: 0;
     height: 2000px;
     background-color: #fff;
 }
 .avatar {
-    width: 206px;
-    height: 206px;
+    width: 200px;
+    height: 200px;
     position: absolute;
     top: 5px;
     left: 5px;
     border-radius: 50%;
-    background-image: url('img/avatar-placeholder.png');
+    border: 3px solid #3593c9;
+    background-image: url('../img/avatar-placeholder.jpg');
 }
 .icon {
     width: 32px;
     height: 33px;
-    background-image: url('img/icon-social.png');
+    background-image: url('../img/icon-social.png');
     position: absolute;
 }
 .icon-twitter {
-    top: 14px;
-    left: 14px;
+    top: 12px;
+    left: 12px;
     background-position: -42px -38px;
 }
 .icon-thumblr {
-    top: 142px;
-    left: 172px;
+    top: 140px;
+    left: 170px;
     background-position: -5px -38px;
 }
 .icon-pinterest {
-    top: 187px;
-    left: 103px;
+    top: 184px;
+    left: 102px;
     background-position: -42px -0px;
 }
 .icon-facebook {
-    top: 170px;
-    left: 141px;
+    top: 166px;
+    left: 139px;
     background-position: -5px -0px;
 }
 
@@ -63,7 +66,6 @@ body {
     background-color: #0089b2;
     top: 10px;
     left: 10px;
-    z-index: 1;
 }
 .contact {
     width: 282px;
@@ -73,17 +75,17 @@ body {
     padding: 24px;
     background-color: #343434;
     opacity: 0.8;
+    z-index: 10;
 }
-.contact-left {
+.contact-img {
     width: 86px;
     height: 86px;
     float: left;
     margin-right: 16px;
     background-color: #f7e35f;
 }
-.contact-right {
+.contact-description {
     font: bold 12px Arial, sans-serif;
-    vertical-align: top;
     color: #fff;
 }
 .contact-title {
