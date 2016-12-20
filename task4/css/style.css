@@ -7,9 +7,8 @@ body {
     height: 100%;
 }
 .container {
-    display: table;
     width: 796px;
-    height: 100%;
+    min-height: 100%;
     margin: 0 auto;
     font-family: Arial, sans-serif;
     font-size: 14px;
@@ -34,27 +33,27 @@ body {
     text-transform: uppercase;
 }
 .brand-title {
-    margin-bottom: -5px;
     font-size: 24px;
     font-weight: normal;
 }
-.brand-desc {
+.brand-description {
     font-size: 14px;
+    line-height: 10px;
 }
-.nav-main {
+.main-nav {
     margin-bottom: 10px;
 }
-.nav-main,
-.nav-left {
+.main-nav,
+.left-nav {
     background-color: #383838;
 }
-.nav-main-item {
+.main-nav-item {
     display: inline-block;
     margin-right: -4px;
     list-style: none;
 }
-.nav-main-item a,
-.nav-left-item a {
+.main-nav-item a,
+.left-nav-item a {
     display: block;
     padding: 9px 12px;
     color: #fff;
@@ -64,40 +63,35 @@ a.active {
     color: #383838;
     background-color: #fff;
 }
-.nav-main-item a:hover,
-.nav-left-item a:hover {
+.main-nav-item a:hover,
+.left-nav-item a:hover {
     text-decoration: underline;
     color: #383838;
     background-color: #fff;
 }
-.content {
-    display: table-row;
-    height: 100%;
+.main {
+    min-height: 100%;
+    padding-bottom: 35px;
 }
-.col-left {
-    position: relative;
+.left-column {
     float: left;
     width: 204px;
     padding: 11px 10px 12px;
-    margin-right: -224px;
     background-color: #ccc;
 }
-.col-right {
-    float: left;
+.right-column {
     width: 562px;
     padding-left: 10px;
     border-left: 224px solid #ccc;
 }
-.content::after {
-    content: "";
-    display: table;
-    clear: both;
-}
-.nav-left-item {
+.left-nav-item {
     list-style: none;
 }
 .footer {
+    width: 796px;
     height: 25px;
+    margin: 0 auto;
+    margin-top: -25px;
     background-color: #383838;
 }
 h2,
@@ -111,16 +105,16 @@ h2 {
 h3 {
     font-size: 16px;
 }
-.col-right p {
+.right-column p {
     padding: 3px 0;
     font-size: 12px;
 }
-.col-right li {
+.right-column li {
     margin-left: 20px;
     font-size: 13px;
     list-style: none;
 }
-.col-right li::before {
+.right-column li::before {
     content: "";
     display: inline-block;
     width: 6px;
