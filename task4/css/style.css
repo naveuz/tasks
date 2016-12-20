@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html,
+body {
+    height: 100%;
+}
+.container {
+    display: table;
+    width: 796px;
+    height: 100%;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #383838;
+}
+.header {
+    height: 89px;
+    padding-top: 9px;
+    padding-left: 9px;
+    background-color: #ccc;
+    border: 1px solid #383838;
+}
+.logo {
+    float: left;
+    width: 69px;
+    height: 69px;
+    margin-right: 8px;
+    background-color: #fff;
+}
+.brand {
+    color: #6b6b6b;
+    text-transform: uppercase;
+}
+.brand-title {
+    margin-bottom: -5px;
+    font-size: 24px;
+    font-weight: normal;
+}
+.brand-desc {
+    font-size: 14px;
+}
+.nav-main {
+    margin-bottom: 10px;
+}
+.nav-main,
+.nav-left {
+    background-color: #383838;
+}
+.nav-main-item {
+    display: inline-block;
+    margin-right: -4px;
+    list-style: none;
+}
+.nav-main-item a,
+.nav-left-item a {
+    display: block;
+    padding: 9px 12px;
+    color: #fff;
+    text-decoration: none;
+}
+a.active {
+    color: #383838;
+    background-color: #fff;
+}
+.nav-main-item a:hover,
+.nav-left-item a:hover {
+    text-decoration: underline;
+    color: #383838;
+    background-color: #fff;
+}
+.content {
+    display: table-row;
+    height: 100%;
+}
+.col-left {
+    position: relative;
+    float: left;
+    width: 204px;
+    padding: 11px 10px 12px;
+    margin-right: -224px;
+    background-color: #ccc;
+}
+.col-right {
+    float: left;
+    width: 562px;
+    padding-left: 10px;
+    border-left: 224px solid #ccc;
+}
+.content::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.nav-left-item {
+    list-style: none;
+}
+.footer {
+    height: 25px;
+    background-color: #383838;
+}
+h2,
+h3 {
+    margin: 6px 0;
+    font-weight: normal;
+}
+h2 {
+    font-size: 18px;
+}
+h3 {
+    font-size: 16px;
+}
+.col-right p {
+    padding: 3px 0;
+    font-size: 12px;
+}
+.col-right li {
+    margin-left: 20px;
+    font-size: 13px;
+    list-style: none;
+}
+.col-right li::before {
+    content: "";
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    margin-bottom: 2px;
+    margin-right: 8px;
+    background-color: #333;
+    border-radius: 50%;
+}
